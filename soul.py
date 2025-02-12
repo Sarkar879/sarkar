@@ -13,11 +13,11 @@ from threading import Thread
 
 loop = asyncio.get_event_loop()
 
-TOKEN = ''
+TOKEN = '7114207827:AAFD1_RrCziYGNFqrVCW2idxWLXVFhOgKZg'
 MONGO_URI = 'mongodb+srv://rishi:ipxkingyt@rishiv.ncljp.mongodb.net/?retryWrites=true&w=majority&appName=rishiv'
-FORWARD_CHANNEL_ID = -1002365113003
-CHANNEL_ID = -1002365113003
-error_channel_id = -1002365113003
+FORWARD_CHANNEL_ID = -1001826672472
+CHANNEL_ID = -1001826672472
+error_channel_id = -1001826672472
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -79,7 +79,7 @@ def check_user_approval(user_id):
     return False
 
 def send_not_approved_message(chat_id):
-    bot.send_message(chat_id, "*YOU ARE NOT APPROVED BUY ACESS:-@KRISHNAVIPOWNER*", parse_mode='Markdown')
+    bot.send_message(chat_id, "*YOU ARE NOT APPROVED BUY ACESS:-@S_a_r_k_a_r_r*", parse_mode='Markdown')
 
 @bot.message_handler(commands=['approve', 'disapprove'])
 def approve_or_disapprove_user(message):
@@ -252,7 +252,7 @@ def handle_message(message):
         bot.reply_to(message, "*🚀Attack Selected*", parse_mode='Markdown')
         attack_command(message)
     elif message.text == "💼ResellerShip":
-        bot.send_message(message.chat.id, "*FOR RESSELER SHIP DM :-@KRISHNAVIPOWNER*", parse_mode='Markdown')
+        bot.send_message(message.chat.id, "*FOR RESSELER SHIP DM :-@S_a_r_k_a_r_r*", parse_mode='Markdown')
     elif message.text == "ℹ️ My Info":
         user_id = message.from_user.id
         user_data = users_collection.find_one({"user_id": user_id})
